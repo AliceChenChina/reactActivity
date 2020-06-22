@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "noEmit": true 
+    },
+    "include": [
+        "src/**/*.js",
+        "src/**/*.jsx"
+    ]
+}

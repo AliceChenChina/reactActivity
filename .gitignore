@@ -1,0 +1,20 @@
+# OSX
+.DS_Store
+
+# Node.js
+node_modules
+npm-debug.log
+
+# BUCK
+.idea
+.vscode
+dist
+
+# Locks
+yarn.lock
+package-lock.json
+
+deploy.sh
+
+joyer-components/*
+!joyer-components/.joyerrc

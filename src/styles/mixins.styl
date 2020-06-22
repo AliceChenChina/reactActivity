@@ -1,0 +1,65 @@
+rem($px)
+    ($px / 750) * 10rem
+
+r($px)
+    rem($px)
+
+bgi($img, $color = 0)
+    if $color
+        background-color: $color
+
+    background-image: $img
+    background-position: center
+    background-size: 100% auto
+    background-repeat: no-repeat
+c666 = #666
+$f = PingFangSC-Regular, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif
+
+ff($font = '')
+    if $font
+        font-family: $font, $f
+    else
+        font-family: $f
+
+close($size = 36)
+
+    .close
+        width: r($size)
+        height: r($size)
+        display: inline-block
+        position: relative
+
+        &:before, &:after
+            position: absolute
+            left: r($size / 2)
+            content: ' '
+            width: r(2)
+            height: r($size)
+            background-color: #fff
+
+        &:before
+            transform: rotate(45deg)
+
+        &:after
+            transform: rotate(-45deg)
+.x-fixed-bottom-bar {
+    padding-bottom: constant(safe-area-inset-bottom)!important;
+    padding-bottom: env(safe-area-inset-bottom)!important
+}
+
+.x-fixed-bottom-bar-inner {
+    bottom: constant(safe-area-inset-bottom)!important;
+    bottom: env(safe-area-inset-bottom)!important
+}
+
+.x-fixed-bottom-bar-inner:after {
+    position: fixed;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: constant(safe-area-inset-bottom)!important;
+    height: env(safe-area-inset-bottom)!important;
+    width: 100%;
+    z-index: 90;
+    background-color: #fff
+}

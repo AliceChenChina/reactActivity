@@ -1,0 +1,21 @@
+@require '../mixins'
+
+.modal
+    display: flex
+    justify-content: center
+
+    .modal-main
+        width: r(600)
+
+    .modal-header
+        padding-bottom: r(30)
+        display: flex
+        justify-content: flex-end
+
+    .modal-content
+        padding: r(30)
+        background-color: #fff
+        border-radius: r(10)
+        overflow-y: auto
+
+    close()

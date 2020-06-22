@@ -1,0 +1,166 @@
+@require '../mixins';
+body{
+    background-color rgb(250,250,250)
+}
+.marginR20
+    margin-right r(20)
+.page
+    .directionImg
+        position fixed
+        left r(0)
+        top r(-130)
+        width 100%
+    img
+        max-width 100%
+    .textAlignCenter
+        text-align center
+    .nameCardWrap
+        padding r(40)r(0)
+        background-color rgb(255,255,255)
+        .nameCardHead
+            padding-left r(10)
+            padding-right r(10)
+        .nameCard
+            height r(408)
+            padding-left r(60)
+            padding-top r(76)
+            padding-bottom r(20)
+            position: relative;
+            background-image url("../..//assets/images/cardBg.png")
+            background-size 100% 100%
+            .personalName
+                line-height r(65)
+                font-size r(46)
+                color rgba(51, 51, 51, 1)
+                font-family: PingFangSC-Medium;
+            .personalDuty
+                 font-size r(24)
+                 color rgba(102, 102, 102, 1)
+                 display flex
+                 line-height r(33)
+                 div:first
+                    margin-right r(35)
+            .cellPhone
+                font-size r(24)
+                line-height r(33)
+                color rgba(102, 102, 102, 1)
+                margin-top r(99)
+            .maibox
+                font-size r(24)
+                line-height r(33)
+                color rgba(102, 102, 102, 1)
+                margin-top r(5)
+             .avator
+                 width r(140)
+                 height r(140)
+                 border-radius 50%
+                 position: absolute;
+                 top r(56)
+                 right r(60)
+                 overflow hidden
+              img
+                  max-width 100%
+        .nameCardCheckData
+            margin-top r(26)
+            display flex
+            flex-direction row-reverse
+            font-size r(24)
+            line-height r(33)
+            color #999999
+            >div
+                display flex
+                p:nth-child(1)
+                    margin-right r(6)
+                    img
+                        max-width 100%
+                p:nth-child(2)
+                    color #999999
+                    font-size r(24)
+                    line-height r(33)
+            .checkBlock
+                margin-right r(56)
+                p:nth-child(1)
+                  width r(38)
+            .shareBlock
+                p:nth-child(1)
+                    width r(30)
+        .personalIntro
+            margin-top r(73)
+            padding-left r(30)
+            padding-right r(30)
+            .introTitle
+                font-size: r(32)
+                color: #333333
+                line-height: r(45)
+                font-family: PingFangSC-Medium;
+            .introContent
+                font-size: r(28)
+                color: #999999
+                line-height: r(48)
+                margin-top r(20)
+    .certificates
+        background-color #FAFAFA
+        padding-top r(40)
+        padding-left r(30)
+        padding-bottom r(87)
+        margin-bottom r(120)
+        .ctfContent
+            display flex
+            flex-wrap wrap
+            margin-top r(8)
+            li
+                margin-top r(20)
+                margin-right r(30)
+                >p
+                    margin-top r(14)
+                    color #6D7278
+                    font-size r(24)
+                    line-height r(33)
+                    text-align center
+                width r(210)
+                .ctfImg
+                    box-shadow:0 0 20px rgba(0, 0, 0, 0.1)
+                    height r(140)
+                    overflow hidden
+                    img
+                        width 100%
+.salesNameCard
+
+    .fixedBottom
+        position fixed
+        width 100%
+        padding-bottom r(15)
+        left 0
+        bottom 0
+        background-color white
+        ul
+            display flex
+        li
+            display flex
+            width 50%
+            flex-direction column
+            padding-top r(20)
+         .wxchatWrap
+             img
+                 width r(50)
+                 height r(42)
+        .appointWrap
+            img
+                width r(42)
+                height r(42)
+        .text
+            line-height r(40)
+            font-size r(28)
+            color #999999
+            margin-top r(15)
+
+
+
+
+
+
+
+
+
+
+

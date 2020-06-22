@@ -1,0 +1,10 @@
+{
+    "joyerVersionNeeded": "1.1.1",
+    "joyerComponents": {
+        "FastClick": "*",
+        "WechatAuthorize": "*",
+         "unionBridge": "*",
+         "unionlog": "*"
+
+    }
+}

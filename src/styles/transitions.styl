@@ -1,0 +1,71 @@
+@require './mixins'
+
+react-transition($name, $start, $end, $tran)
+    .{$name}-enter.{$name}-enter-active,
+    .{$name}-appear.{$name}-appear-active,
+    .{$name}-exit.{$name}-exit-active
+        {$tran}
+
+    .{$name}-enter.{$name}-enter-active,
+    .{$name}-appear.{$name}-appear-active
+        transition-timing-function: ease-out
+
+    .{$name}-exit.{$name}-exit-active
+        transition-timing-function: ease-in
+
+    .{$name}-exit,
+    .{$name}-appear.{$name}-appear-active,
+    .{$name}-appear-done,
+    .{$name}-enter.{$name}-enter-active,
+    .{$name}-enter-done
+        {$end}
+
+    .{$name}-appear,
+    .{$name}-enter,
+    .{$name}-exit.{$name}-exit-active,
+    .{$name}-exit-done
+        {$start}
+
+react-transition(
+    'fade',
+    { opacity: 0 },
+    { opacity: 1 },
+    { transition: opacity .3s }
+)
+
+react-transition(
+    'fade-modal',
+    {
+        transform: scale(0.9)
+        opacity: 0
+    },
+    {
+        transform: scale(1)
+        opacity: 1
+    },
+    { transition: all .1s }
+)
+
+react-transition(
+    'bg-fade',
+    { background-color: rgba(0,0,0,0) },
+    { background-color: rgba(0,0,0,.7) },
+    { transition:  background-color .2s },
+)
+
+.pulse
+    animation: pulse 1s linear infinite
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1)
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+
+    to {
+        transform: scale3d(1, 1, 1)
+    }
+}

@@ -1,0 +1,90 @@
+@charset "UTF-8"
+
+@import './transitions'
+
+/*
+* Override browsers' style
+*/
+
+*
+    box-sizing: border-box
+    -webkit-tap-highlight-color: transparent
+    font-family: "PingFangSC-Regular", 'Helvetica Neue', Helvetica, STHeiTi, sans-serif
+
+ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+a
+    text-decoration: none
+
+p
+    margin: 0
+    padding: 0
+
+button
+    margin: 0
+    padding: 0
+    outline: 0
+    border: 0
+    background: none
+
+button:active, button:focus
+    outline: 0
+
+/*
+* Basic
+*/
+
+html
+    font-size: 10vw
+    min-height: 100%
+    line-height: 1
+
+body
+    min-height: 100%
+    ff()
+    font-size: (16 / 375) * 100vw
+    background-color: #fff
+#app
+    min-height: 100%
+    line-height: 1
+
+/*
+* Utils
+*/
+
+.img-wrapper
+    font-size: 0
+    display: inline-block
+
+    & > .img
+        max-width: 100%
+        max-height: 100%
+        border-style: none
+        outline: none
+
+.tappable:active
+    opacity: .7
+
+.invisible
+    opacity: 0
+
+/*去除Chrome等浏览器文本框默认发光边框*/
+input:focus, textarea:focus
+    outline: none
+
+/* 禁止链接高亮 */
+a, input
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+img
+    vertical-align: middle
+    border-style: none
+    max-width: 100%
+/* 热点在手机端去掉框 */
+map area
+    outline: none
+
+

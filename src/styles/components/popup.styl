@@ -1,0 +1,43 @@
+@require '../mixins'
+
+.popup
+    width: 100%
+    height: 100%
+    min-height: 100%
+    position: fixed
+    z-index: 12
+    top: 0
+    left: 0
+    // background-color: rgba(0,0,0,.7)
+
+    .modal.modal-msg
+        padding-top: r(400)
+
+        .md-msg
+            line-height: 1.5
+
+        .modal-content
+            padding: r(20)
+
+    .modal.modal-alert
+        height: 100%
+        align-items: center
+
+        .modal-content
+            padding: 0
+            text-align: center
+            font-size: r(32)
+
+        .ma-content
+            padding: r(42) r(42) r(42)
+            line-height: r(56)
+            border-bottom: 1px solid #e4e4e4
+            color: #333
+
+        .ma-btn
+            width: 100%
+            padding: r(30)
+            color: #CDA76E
+
+            &:active
+                background: #ececec

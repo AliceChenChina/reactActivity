@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "activity-dongjia",
+  "description": "React Template",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "jr dev",
+    "clean": "rm -rf ./dist/*",
+    "deploy:test": "jr build test && jr deploy",
+    "deploy:minner": "jr build minner && jr deploy",
+    "deploy": "jr build && bash deploy.sh"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@types/react": "^16.8.14",
+    "@types/react-router-dom": "^4.3.2",
+    "connect-history-api-fallback": "^1.6.0",
+    "react-hot-loader": "^4.8.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.3",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-transition-group": "2.x",
+    "weixin-js-sdk": "^1.4.0-test",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
